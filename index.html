@@ -1,36 +1,43 @@
 <html>
-  <head>
-    <title>Weather App</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-		<script type="text/javascript" src="weather.js"></script>
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-		crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css?family=Orbitron:500,700" rel="stylesheet">
-  </head>
-  <body>
-	 
-  <div class="main">
-	
-	<div class="app-bg">
-  <img src="imgs/earth-hq.jpeg" alt="">
+
+<head>
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script type="text/javascript" src="weather.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:500,700" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="main">
+
+		<div class="app-bg">
+			<img src="imgs/earth-hq.jpeg" alt="">
+		</div>
+
+		<div class="location">
+			<span id="location">Unknown</span>
+		</div>
+		<div class="temp">
+			<span id="temperature">0</span>&deg;</div>
+		<div class="top">
+			<img id="icon" width="200px" src="imgs/codes/200.png" />
+		</div>
+
+
+		<div class="humidity">
+			<img src="imgs/humidity.png" height="50px" />
+			<span id="humidity">0</span>%
+		</div>
+
+		<div class="wind">
+			<span id="wind">0</span> km/h
+			<span id="direction">N</span>
+		</div>
 	</div>
-	
-	<div class="location"><span id="location">Unknown</span></div> 
-	<div class="temp"><span id="temp">0</span>&deg;</div>
-	<div class="top">
-	<img id="icon" width="200px" src="imgs/codes/200.png" /></div>
 
+</body>
 
-	  <div class="humidity">
-	    <img src="imgs/humidity.png" height="50px" />
-	    <span id="humidity">0</span>%
-	  </div>
-	  
-	  <div class="wind">
-	    <span id="wind">0</span> km/h <span id="direction">N</span>
-		</div>
-		</div>
-	  
-  </body>
 </html>
