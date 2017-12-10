@@ -49,13 +49,19 @@ body {
 .humidity {
     left: 2%;
     position: absolute;
-    bottom: 80%;
+    bottom: 85%;
     font-size: 75px;
 }
 
 .wind {
     position: absolute;
-    bottom: 80%;
+    bottom: 85%;
     left: 69%;
     font-size: 75px;
+}
+
+#direction {
+    position: absolute;
+    padding: 3%;
+    left: 35%;
 }
