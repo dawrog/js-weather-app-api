@@ -21,15 +21,35 @@ function sendRequest(url) {
        weather.icon = data.weather[0].id;
        weather.humidity = data.main.humidity;
        weather.wind = data.wind.speed;
-       weather.direction = data.wind.deg;
+       weather.direction = degreesToDirection(data.wind.deg);
        weather.loc = data.name;
-       weather.temp = data.main.temp;
+       weather.temp = K2C(data.main.temp);
        update(weather);
   
     }
   };
   xmlhttp.open("GET", url, true);
   xmlhttp.send();
+}
+
+function degreesToDirection(degrees) {
+  var range = 360/16;
+  var low = 360 - range/2;
+  var high = (low + range) % 360;
+  var angles = ["N", "NE", "NNE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNN"];
+  for( i in angles) {
+
+    if( degrees >= low && degrees < high )
+        return angles[i];
+
+    low = (low + range) % 360;
+    high = (high + range) % 360;
+  }
+  return "N";
+}
+
+function K2C(k) {
+  return Math.round(k - 273.5);
 }
 
 function update(weather) {
