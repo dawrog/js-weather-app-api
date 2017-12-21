@@ -67,3 +67,21 @@ body {
     padding: 3%;
     left: 35%;
 }
+
+    @media screen and (max-width: 960px) {
+    
+
+        
+    }
+    
+    @media screen and (max-width: 768px) {
+        
+    
+        
+    }
+    
+    @media screen and (max-width: 480px) {
+        
+    
+    
+    }
