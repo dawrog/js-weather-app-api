@@ -11,7 +11,7 @@ body {
 .app-bg {
     background: #090909;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .app-bg img {
@@ -55,16 +55,20 @@ body {
     font-size: 75px;
 }
 
-.wind {
+.wind-stats {
+    left: 60%;
     position: absolute;
-    bottom: 85%;
-    left: 65%;
+    bottom: 67%;
     font-size: 75px;
+    margin: 5%;
 }
 
-#direction {
+//.wind {
+    
+}
+
+//#direction {
     position: absolute;
-    padding: 3%;
     left: 35%;
 }
 
