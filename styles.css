@@ -58,7 +58,7 @@ body {
 .wind-stats {
     left: 60%;
     position: absolute;
-    bottom: 67%;
+    bottom: 70%;
     font-size: 75px;
     margin: 5%;
 }
@@ -67,9 +67,8 @@ body {
     
 }
 
-//#direction {
-    position: absolute;
-    left: 35%;
+#direction {
+    
 }
 
     @media screen and (max-width: 960px) {
