@@ -5,20 +5,20 @@ var icon;
 var humidity;
 var wind;
 var direction;
-
+/*
 function updateByZip(zip) {
   var url = "http://api.openweathermap.org/data/2.5/weather?" + "zip=" + zip + 
   "&APPID=" + APPID;
 sendRequest(url);
-}
-
+} */
+/*
 function updateByGeo(lat, lon) {
     var url = "http://api.openweathermap.org/data/2.5/weather?" + 
         "lat=" + lat +
         "&lon=" + lon +
         "&APPID=" + APPID;
     sendRequest(url);
-}
+}  */
 
 function sendRequest(url) {
   var xmlhttp = new XMLHttpRequest ();

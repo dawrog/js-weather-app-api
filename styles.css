@@ -26,7 +26,7 @@ body {
 .location {
     width: 100%;
     margin: 0;
-    font-size: 100px;
+    font-size: 6em;
     font-weight: bold;
     position: absolute;
     bottom: 55%;
@@ -42,7 +42,7 @@ body {
 
 .temp {
     width: 100%;
-    font-size: 100px;
+    font-size: 6em;
     position: absolute;
     text-align: center;
     bottom: 40%;
@@ -52,23 +52,23 @@ body {
     left: 2%;
     position: absolute;
     bottom: 85%;
-    font-size: 75px;
+    font-size: 5em;
 }
 
 .wind-stats {
-    left: 60%;
+    left: 65%;
     position: absolute;
-    bottom: 70%;
-    font-size: 75px;
-    margin: 5%;
+    bottom: 84%;
+    font-size: 5em;
+    text-align: center;
 }
 
-//.wind {
+.wind {
     
 }
 
 #direction {
-    
+     
 }
 
     @media screen and (max-width: 960px) {
