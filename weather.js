@@ -5,13 +5,14 @@ var icon;
 var humidity;
 var wind;
 var direction;
+
 /*
 function updateByZip(zip) {
   var url = "http://api.openweathermap.org/data/2.5/weather?" + "zip=" + zip + 
   "&APPID=" + APPID;
 sendRequest(url);
-} */
-/*
+} 
+
 function updateByGeo(lat, lon) {
     var url = "http://api.openweathermap.org/data/2.5/weather?" + 
         "lat=" + lat +
@@ -69,7 +70,7 @@ function update(weather) {
     icon.src = "imgs/codes/" + weather.icon + ".png"
     console.log(icon.src);
 }
-
+/*
 function showPosition(position) {
   updateByGeo(position.coords.latitude, position.coords.longitude);
 }
@@ -87,9 +88,9 @@ if(navigator.geolocation) {
 } else {
   var zip = window.prompt("Nie możnabyło otrzymać Twojej lokacji jaki jest Twoj kod zip?");
   updateByZip(zip); 
-  }
+  } */
  
-  /*var weather = {};
+  var weather = {};
   weather.wind = 3.5;
   weather.direction = "N";
   weather.humidity = 35;
@@ -97,6 +98,6 @@ if(navigator.geolocation) {
   weather.temp = "0";
   weather.icon = "200";
   
-  update(weather); */
+  update(weather); 
 } 
 
