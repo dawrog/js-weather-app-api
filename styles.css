@@ -1,10 +1,16 @@
 body {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Orbitron', Verdana, Helvetica, sans-serif;
     margin: 0 auto;
-    background: url("imgs/earth-hq.jpeg") no-repeat;
-    background-size: contain;
-    color: #fff;
+    background: url("img/earth-hq.jpeg") no-repeat;
+    background-size: 100% 75%;
     background-color: #040404;
+    color: #fff;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
 }
 
 .tint {
@@ -38,8 +44,12 @@ body {
 
 .top {
     width: 100%;
-    height: 150px;
+    height: 125px;
     text-align: center;
+}
+
+.top img {
+    margin-top: -40px;
 }
 
 .location {
@@ -57,9 +67,36 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 1024px) {
+    .humidity, .wind-stats {
+        font-size: 4em;
+    }
 
-.wind {}
-#direction {}
-@media screen and (max-width: 960px) {}
-@media screen and (max-width: 768px) {}
-@media screen and (max-width: 480px) {}
+    .location, .temp {
+        font-size: 5em;
+    }
+
+    body {
+        background: url("img/earth-mq.jpg") no-repeat;
+        background-size: 100% 50%;
+        background-color: #040404;
+        color: #fff;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background: url("img/earth-mq.jpg") no-repeat;
+        background-size: 100% 50%;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background: url("img/earth-lq.jpg") no-repeat;
+        background-size: 100% 50%;
+    }
+
+}

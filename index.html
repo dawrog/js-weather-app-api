@@ -4,31 +4,34 @@
 	<title>Weather App</title>
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 	<link href="https://fonts.googleapis.com/css?family=Orbitron:500,700" rel="stylesheet">
-	<script type="text/javascript" src="weather.js"></script>
+	<script type="text/javascript" src="weather.js" async></script>
 </head>
 
 <body>
 	<div class="tint">
-		<span class="humidity">
-			<img src="imgs/humidity.png" height="50px" />
-			<span id="humidity">0</span>%
-		</span>
-		<span class="wind-stats">
-			<span id="wind">0</span> km/h
-			<br />
-			<span id="direction">N</span>
-		</span>
-		<div class="container-middle">
-			<div class="top">
-				<img id="icon" width="200px" src="imgs/codes/200.png" />
+		<div class="wrapper">
+			<span class="humidity">
+				<img src="img/humidity.png" height="50px" />
+				<span id="humidity">0</span>%
+			</span>
+			<span class="wind-stats">
+				<span id="wind">0</span> km/h
+				<br />
+				<span id="direction">N</span>
+			</span>
+			<div class="container-middle">
+				<div class="top">
+					<img id="icon" width="200px" src="img/codes/200.png" />
+				</div>
+				<div class="location">
+					<span id="location">Unknown</span>
+				</div>
+				<div class="temp">
+					<span id="temperature">0</span>&deg;</div>
 			</div>
-			<div class="location">
-				<span id="location">Unknown</span>
-			</div>
-			<div class="temp">
-				<span id="temperature">0</span>&deg;</div>
 		</div>
 	</div>
+
 </body>
 
 </html>

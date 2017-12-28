@@ -7,13 +7,13 @@ var wind;
 var direction;
 
 function updateByZip(zip) {
-  var url = "http://api.openweathermap.org/data/2.5/weather?" + "zip=" + zip + 
+  var url = "https://api.openweathermap.org/data/2.5/weather?" + "zip=" + zip + 
   "&APPID=" + APPID;
 sendRequest(url);
 } 
 
 function updateByGeo(lat, lon) {
-    var url = "http://api.openweathermap.org/data/2.5/weather?" + 
+    var url = "https://api.openweathermap.org/data/2.5/weather?" + 
         "lat=" + lat +
         "&lon=" + lon +
         "&APPID=" + APPID;
@@ -66,7 +66,7 @@ function update(weather) {
     direction.innerHTML = weather.direction;
     loc.innerHTML = weather.location;
     temp.innerHTML = weather.temp;
-    icon.src = "imgs/codes/" + weather.icon + ".png"
+    icon.src = "img/codes/" + weather.icon + ".png"
     console.log(icon.src);
 }
 
@@ -85,18 +85,9 @@ window.onload = function () {
 if(navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(showPosition);
 } else {
-  var zip = window.prompt("Nie możnabyło otrzymać Twojej lokacji jaki jest Twoj kod zip?");
+  var zip = window.prompt("Nie można było otrzymać Twojej lokacji jaki jest Twoj kod zip?");
   updateByZip(zip); 
   } 
  
-  var weather = {};
-  weather.wind = 3.5;
-  weather.direction = "N";
-  weather.humidity = 35;
-  weather.location = "Sosnowiec";
-  weather.temp = "0";
-  weather.icon = "200";
-  
-  update(weather); 
 } 
 
