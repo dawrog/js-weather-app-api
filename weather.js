@@ -30,7 +30,7 @@ function sendRequest(url) {
        weather.humidity = data.main.humidity;
        weather.wind = data.wind.speed;
        weather.direction = degreesToDirection(data.wind.deg);
-       weather.loc = data.name;
+       weather.location = data.name;
        weather.temp = K2C(data.main.temp);
        update(weather);
   

@@ -96,7 +96,7 @@ body {
 @media screen and (max-width: 480px) {
     body {
         background: url("img/earth-lq.jpg") no-repeat;
-        background-size: 100% 50%;
+        background-size: 100%;
     }
 
 }
