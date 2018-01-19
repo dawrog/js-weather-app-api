@@ -67,6 +67,7 @@ body {
     text-align: center;
 }
 
+/*low resolution desktop*/
 @media screen and (max-width: 1024px) {
     .humidity, .wind-stats {
         font-size: 4em;
@@ -85,6 +86,7 @@ body {
 
 }
 
+/*tamblets*/
 @media screen and (max-width: 768px) {
     body {
         background: url("img/earth-mq.jpg") no-repeat;
@@ -93,6 +95,7 @@ body {
     
 }
 
+/*mobile*/
 @media screen and (max-width: 480px) {
     body {
         background: url("img/earth-lq.jpg") no-repeat;
